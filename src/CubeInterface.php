@@ -161,9 +161,4 @@ interface CubeInterface
         string $side,
         string $direction = self::DIRECTION_CLOCKWISE
     ): void;
-
-    /**
-     * @return void
-     */
-    public function render(): void;
 }

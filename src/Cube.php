@@ -94,32 +94,4 @@ class Cube implements CubeInterface
 
         $this->setPieces($twistedPieces);
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function render(): void
-    {
-        $sides      = array_keys($this->colorMapping);
-        $sideChunks = array_chunk($this->pieces, 9, true);
-
-        foreach ($sideChunks as $sideIndex => $sideChunk) {
-            echo $sides[$sideIndex] . PHP_EOL;
-
-            $pieceChunks = array_chunk($sideChunk, 3, true);
-
-            foreach ($pieceChunks as $pieceChunk) {
-
-                foreach ($pieceChunk as $color) {
-                    echo $color . "\t";
-                }
-
-                echo PHP_EOL;
-            }
-
-            echo PHP_EOL;
-        }
-
-        echo PHP_EOL;
-    }
 }
