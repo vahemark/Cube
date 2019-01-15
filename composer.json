@@ -1,0 +1,12 @@
+{
+  "name": "cube",
+  "description": "Rubik's cube solver based on deep machine learning.",
+  "autoload": {
+    "psr-4": {
+      "Cube\\": "src"
+    }
+  },
+  "require": {
+    "symfony/console": "^4.2"
+  }
+}
