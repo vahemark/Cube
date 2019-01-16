@@ -9,6 +9,7 @@ $app = new Application();
 $app->addCommands(
     [
         new \Cube\Command\ScrambleCommand(),
+        new \Cube\Command\PlayCommand(),
     ]
 );
 
